@@ -1,0 +1,418 @@
+/* ========================================
+   GRAND ÉCRAN : 3000px et plus
+======================================== */
+
+@media (min-width: 2000px) {
+
+    .navbar,
+    .hero-content,
+    .section {
+        max-width: 1600px;
+    }
+
+    .navbar {
+        min-height: 90px;
+    }
+
+    .nav-links {
+        gap: 35px;
+    }
+
+    .nav-links a {
+        font-size: 20px;
+    }
+
+    .logo {
+        font-size: 26px;
+    }
+
+    .hero {
+        min-height: 750px;
+        gap: 100px;
+        padding: 100px 8%;
+    }
+
+    .hero h1 {
+        font-size: 72px;
+    }
+
+    .hero h2 {
+        font-size: 38px;
+    }
+
+    .hero-content > p {
+        font-size: 24px;
+    }
+
+    .profil {
+        width: 450px;
+    }
+
+    .profil-image {
+        width: 400px;
+        height: 400px;
+    }
+
+    .section {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .section > h2 {
+        font-size: 42px;
+    }
+
+    .cards,
+    .projects {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 35px;
+    }
+
+    .card,
+    .project {
+        padding: 35px;
+    }
+
+    .card p,
+    .project p,
+    .about p,
+    .network-content {
+        font-size: 20px;
+    }
+
+    .social-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 35px;
+    }
+}
+
+
+/* ========================================
+   ORDINATEUR : 801px à 1200px
+======================================== */
+
+@media (min-width: 801px) and (max-width: 1200px) {
+
+    .navbar,
+    .hero-content,
+    .section {
+        width: 92%;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .hero {
+        gap: 30px;
+        padding: 60px 4%;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero h2 {
+        font-size: 21px;
+    }
+
+    .hero-content {
+        min-width: 0;
+    }
+
+    .profil {
+        width: 230px;
+    }
+
+    .profil-image {
+        width: 220px;
+        height: 220px;
+    }
+
+    .cards,
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .social-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+
+/* ========================================
+   TABLETTE : 501px à 800px
+======================================== */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        width: 90%;
+    }
+
+    .menu-btn {
+        display: block;
+        color: #111827;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 65px;
+        left: 0;
+        right: 0;
+        background: #10B981;
+        flex-direction: column;
+        gap: 0;
+        padding: 15px 5%;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        padding: 10px 0;
+    }
+
+    .nav-links a {
+        font-size: 15px;
+        color: #111827;
+    }
+
+    .hero {
+        flex-direction: column;
+        justify-content: center;
+        gap: 35px;
+        padding: 50px 5%;
+        text-align: center;
+    }
+
+    .hero-content {
+        width: 100%;
+        padding: 0;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero h2 {
+        font-size: 22px;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+
+    .profil {
+        width: 100%;
+    }
+
+    .profil-image {
+        width: 220px;
+        height: 220px;
+    }
+
+    .section {
+        width: 90%;
+        padding: 50px 0;
+    }
+
+    .light {
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .cards,
+    .projects {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+    }
+
+    .card,
+    .project {
+        padding: 20px;
+    }
+
+    .social-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+    }
+
+    .social-card {
+        padding: 25px 15px;
+    }
+
+    .social-card i {
+        font-size: 45px;
+    }
+
+    .social-card h3 {
+        font-size: 22px;
+    }
+}
+
+
+/* ========================================
+   PETIT TÉLÉPHONE : 401px à 500px
+======================================== */
+
+@media (max-width: 500px) {
+
+    .hero {
+        min-height: auto;
+        padding: 45px 5%;
+        gap: 30px;
+    }
+
+    .hero h1 {
+        font-size: 29px;
+    }
+
+    .hero h2 {
+        font-size: 19px;
+    }
+
+    .hero-content > p {
+        font-size: 14px;
+    }
+
+    .small-title {
+        font-size: 12px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 260px;
+    }
+
+    .profil h2 {
+        font-size: 21px;
+    }
+
+    .profil-image {
+        width: 180px;
+        height: 180px;
+    }
+
+    .section > h2 {
+        font-size: 26px;
+    }
+
+    .cards,
+    .projects,
+    .social-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card,
+    .project {
+        padding: 20px;
+    }
+
+    .timeline-item {
+        gap: 12px;
+    }
+
+    .social-card {
+        padding: 25px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}
+
+
+/* ========================================
+   TRÈS PETIT TÉLÉPHONE : 400px et moins
+======================================== */
+
+@media (max-width: 400px) {
+
+    .navbar {
+        width: 92%;
+    }
+
+    .logo {
+        font-size: 15px;
+    }
+
+    .hero {
+        padding: 35px 4%;
+    }
+
+    .hero h1 {
+        font-size: 25px;
+        overflow-wrap: anywhere;
+    }
+
+    .hero h2 {
+        font-size: 17px;
+    }
+
+    .hero-content > p {
+        font-size: 13px;
+    }
+
+    .profil-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .profil h2 {
+        font-size: 19px;
+    }
+
+    .section {
+        width: 92%;
+        padding: 40px 0;
+    }
+
+    .light {
+        width: 100%;
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    .section > h2 {
+        font-size: 23px;
+        margin-bottom: 20px;
+    }
+
+    .card,
+    .project {
+        padding: 16px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 10px 14px;
+    }
+
+    .social-card i {
+        font-size: 40px;
+    }
+
+    .social-card h3 {
+        font-size: 20px;
+    }
+
+    .timeline-item {
+        font-size: 14px;
+    }
+}
